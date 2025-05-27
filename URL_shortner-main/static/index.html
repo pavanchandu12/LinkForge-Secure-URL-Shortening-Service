@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>URL Shortener</h1>
+            <p>Create short, memorable links for your long URLs</p>
+        </header>
+
+        <main>
+            <div class="url-form">
+                <div class="input-group">
+                    <input type="url" id="longUrl" placeholder="Enter your long URL here" required>
+                    <button onclick="shortenUrl()">Shorten</button>
+                </div>
+                <div id="result" class="result-container hidden">
+                    <div class="short-url">
+                        <input type="text" id="shortUrl" readonly>
+                        <button onclick="copyToClipboard()">Copy</button>
+                    </div>
+                    <div id="error" class="error-message hidden"></div>
+                </div>
+            </div>
+
+            <div class="features">
+                <div class="feature">
+                    <h3>Fast & Reliable</h3>
+                    <p>Instant URL shortening with 99.9% uptime</p>
+                </div>
+                <div class="feature">
+                    <h3>Secure</h3>
+                    <p>All URLs are encrypted and safe to use</p>
+                </div>
+                <div class="feature">
+                    <h3>Analytics</h3>
+                    <p>Track your link performance</p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Built with ❤️ using FastAPI and Redis</p>
+            <p class="team-name">Team: pragnan_pavan_parv_sritesh</p>
+        </footer>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
