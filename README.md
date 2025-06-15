@@ -29,9 +29,6 @@ It allows you to shorten long URLs, generate short codes, store mappings in Redi
 
 **Docker + Docker Compose** (for container orchestration)
 
-**Pydantic** (for request validation)
-
-
 📦 **Setup (Docker)**
 
 1️⃣ **Clone the repository**
